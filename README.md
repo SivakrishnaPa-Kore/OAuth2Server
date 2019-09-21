@@ -29,3 +29,20 @@ contains 3 parameters: grant_type, username and password)
     Authorization: "Bearer " +  accesstoken
     
 (for example, Bearer d3e07f7c14f8f73268eea97e96398f96af8c89da)
+
+
+#Steps:
+1. run `npm install`
+2. run create_data file to create users and clients in redis
+
+   ` $ node create_date.js`
+3. Launch app
+
+   `node app.js`
+
+4. open the post man to make a request
+
+   `localhost:5000/oauth/token`
+
+5 After making the above request you will get the access token.
+
